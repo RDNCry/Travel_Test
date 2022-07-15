@@ -1,6 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
+   Till 368
 */
 
 html, body, div, span, applet, object, iframe,
@@ -365,16 +366,21 @@ textarea {
     padding: 0.2em 0;
 }
 /* The End of Reset */
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
 .style_mount {
   background-image: url(images/plan_mount.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 1440px;
   height: 765px;
-}
-* {
-    box-sizing: border-box;
 }
 header {
     width: 1440px;
@@ -503,3 +509,36 @@ h1 {
     line-height: 32px;
     color: #FFFFFF;
     }
+.steps {
+        height: 422px;
+        }
+h2 {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+        color: #F2785C;
+    }
+.steps h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.steps figcaption {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    }
+.steps .image {
+    display: flex;
+    align-content: center;
+}
+.steps .image .test {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
